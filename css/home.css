@@ -1,0 +1,194 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a;
+  color: white;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  padding: 10px 20px;
+}
+/* Media query del NAVBAR */
+@media (max-width: 550px) {
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  .navbar ul {
+    font-size: 13px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.navbar .logo {
+  font-size: 24px;
+
+  font-family: "galada", sans-serif;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  font-family: "libre franklin", sans-serif;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+.navbar ul li a:hover {
+  color: #ccc;
+}
+.navbar .redes-sociales {
+  display: flex;
+  gap: 15px;
+}
+.navbar .redes-sociales a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+.redes-sociales-footer {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 5px;
+}
+
+/* media queryes para el footer */
+@media (min-width: 480px) {
+  .footer {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .redes-sociales-footer {
+    gap: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding: 20px;
+    font-size: 16px;
+  }
+  .redes-sociales-footer {
+    gap: 20px;
+  }
+}
+
+.banner {
+  max-width: 100%;
+  height: auto;
+}
+
+.texto-banner {
+  position: absolute;
+  top: 160px;
+  left: 65px;
+  color: #fff;
+}
+/* Media query para el texto del banner */
+@media (max-width: 550px) {
+  .texto-banner {
+    top: 120px;
+    left: 40px;
+  }
+}
+.titulo-banner {
+  color: #fff;
+  font-size: 24px;
+}
+.container-cards {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin: 15px;
+}
+.titulo-portfolio {
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  font-family: "libre franklin", sans-serif;
+}
+.card {
+  flex-basis: 250px; /*para que los cards sean de igual tamaño */
+  height: 146px; /* para que los cards sean de igual tamaño */
+  background: #898989;
+  border: 1px solid #adadad;
+  /* non se porque ayuda el position relative para que los botones se muestren */
+  position: relative;
+  padding: 5px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* @media (max-width: 509px) {
+  .card img {
+    height: 110%;
+  }
+}
+@media (max-width: 436px) {
+  .card img {
+    height: 133%;
+  }
+}
+@media (max-width: 375px) {
+  .card img {
+    height: 160%;
+  }
+} */
+.card .boton-fotos {
+  position: absolute;
+  top: 78%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #ccc;
+  background-color: white;
+  padding: 4px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.card .boton-videos {
+  position: absolute;
+  top: 78%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #ccc;
+  background-color: white;
+  padding: 4px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.card .boton-fotos:hover {
+  background: #cacaca;
+}
+
+.card .boton-videos:hover {
+  background: #cacaca;
+}

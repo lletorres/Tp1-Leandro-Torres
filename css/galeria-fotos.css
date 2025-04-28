@@ -1,0 +1,7 @@
+.carousel-inner {
+  margin: 0 auto; /* centrar horizontalmente */
+  display: block; /* display block para centrar verticalmente */
+  width: 60%; /* ancho relativo */
+  height: 100%; /* alto máximo */
+  object-fit: cover; /* ajustar la imagen al tamaño del contenedor */
+}

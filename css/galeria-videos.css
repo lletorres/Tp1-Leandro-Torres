@@ -1,0 +1,15 @@
+.container-videos {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 15px;
+}
+
+.video-css {
+  display: flex;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(178 178 178 / 30%);
+}
