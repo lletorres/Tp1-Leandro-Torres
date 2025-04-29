@@ -1,7 +1,11 @@
-.carousel-inner {
-  margin: 0 auto; /* centrar horizontalmente */
-  display: block; /* display block para centrar verticalmente */
-  width: 60%; /* ancho relativo */
-  height: 100%; /* alto máximo */
-  object-fit: cover; /* ajustar la imagen al tamaño del contenedor */
+.medida-carousel {
+  max-width: 30%;
+  height: auto;
+  margin: auto;
+}
+.titulo-fotos {
+  font-size: 25px;
+  text-align: center;
+  font-family: "libre franklin", sans-serif;
+  padding: 5px;
 }
