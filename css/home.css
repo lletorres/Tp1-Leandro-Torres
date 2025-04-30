@@ -1,8 +1,17 @@
+main {
+  flex: 1;
+}
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #1a1a1a;
   color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
 }
 .navbar {
   display: flex;
@@ -63,13 +72,15 @@ body {
   background-color: #000000;
   color: #ffffff;
   padding: 20px;
-  margin-top: 10px;
+  /* margin-top: 100%; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: 12px;
   bottom: 0;
+  position: relative;
+  width: 100%;
 }
 .redes-sociales-footer {
   display: flex;
@@ -79,6 +90,7 @@ body {
 }
 .redes-sociales-footer a {
   color: #ffffff;
+  color: rgb(255 255 255);
   text-decoration: none;
 }
 

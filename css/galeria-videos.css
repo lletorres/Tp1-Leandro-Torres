@@ -13,3 +13,11 @@
   border-radius: 10px;
   box-shadow: 0 0 10px rgb(178 178 178 / 30%);
 }
+.titulo-videos {
+  font-size: 25px;
+  text-align: center;
+  font-family: "libre franklin", sans-serif;
+  padding: 10px;
+  text-shadow: 2px 2px 4px #474747;
+  font-weight: 200;
+}
