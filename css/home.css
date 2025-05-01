@@ -118,6 +118,7 @@ body {
 .hero {
   max-width: 100%;
   height: auto;
+  filter: brightness(0.5);
 }
 
 .texto-hero {
@@ -136,7 +137,6 @@ body {
 .titulo-hero {
   color: #fff;
   font-size: 40px;
-  text-shadow: 2px 2px 4px #000;
 }
 @media (max-width: 360px) {
   .titulo-hero {
@@ -151,7 +151,6 @@ body {
 .parrafo-hero {
   color: #fff;
   font-size: 16px;
-  text-shadow: 2px 2px 4px #000;
 }
 @media (max-width: 360px) {
   .parrafo-hero {
