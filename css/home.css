@@ -146,6 +146,7 @@ body {
 @media (max-width: 768px) {
   .titulo-hero {
     font-size: 25px;
+    width: 280px;
   }
 }
 .parrafo-hero {
@@ -160,6 +161,7 @@ body {
 @media (max-width: 768px) {
   .parrafo-hero {
     font-size: 14px;
+    width: 230px;
   }
 }
 
