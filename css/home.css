@@ -171,6 +171,16 @@ body {
   text-align: center;
   font-family: "libre franklin", sans-serif;
 }
+@media (max-width: 360px) {
+  .presentacion-servicios h1 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .presentacion-servicios h1 {
+    font-size: 25px;
+  }
+}
 .presentacion-servicios {
   display: flex;
   flex-direction: column;
@@ -241,13 +251,9 @@ body {
   padding: 5px;
   text-align: center;
   background-image: url("../assets/img/button-videos.jpeg");
-  background-size: cover; /* o background-size: contain */
-  background-position: center; /* opcional */
+  background-size: cover;
+  background-position: center;
 }
-
-/* .card-fotos .boton-fotos {
-  display: none;
-} */
 
 .card-fotos a {
   text-decoration: none;
