@@ -162,14 +162,7 @@ body {
     font-size: 14px;
   }
 }
-.container-cards {
-  display: flex;
-  gap: 20px;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: nowrap;
-  margin: 15px;
-}
+
 .presentacion-servicios h1 {
   color: #fff;
   font-size: 30px;
@@ -211,61 +204,87 @@ body {
   text-align: center;
   font-family: "libre franklin", sans-serif;
 }
-.card {
-  flex-basis: 250px; /*para que los cards sean de igual tamaño */
-  height: 146px; /* para que los cards sean de igual tamaño */
-  background: #898989;
-  border: 1px solid #adadad;
+.container-cards {
+  display: flex;
+  gap: 20px;
+  flex-direction: grow;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin: 15px;
+}
+@media (max-width: 768px) {
+  .container-cards {
+    flex-wrap: wrap;
+  }
+}
+.card-fotos {
+  width: 100%; /*para que los cards sean de igual tamaño */
+  height: 270px; /* para que los cards sean de igual tamaño */
+
   /* non se porque ayuda el position relative para que los botones se muestren */
   position: relative;
   padding: 5px;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-.card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-@media (max-width: 414px) {
-  .card img {
-    height: 90%;
-  }
-}
-@media (max-width: 430px) {
-  .card img {
-    height: 82%;
-  }
+  background-image: url("../assets/img/button-fotos.jpeg");
+  background-size: cover; /* o background-size: contain */
+  background-position: center; /* opcional */
 }
 
-.card .boton-fotos {
+.card-videos {
+  width: 100%; /*para que los cards sean de igual tamaño */
+  height: 270px; /* para que los cards sean de igual tamaño */
+
+  /* non se porque ayuda el position relative para que los botones se muestren */
+  position: relative;
+  padding: 5px;
+  text-align: center;
+  background-image: url("../assets/img/button-videos.jpeg");
+  background-size: cover; /* o background-size: contain */
+  background-position: center; /* opcional */
+}
+
+/* .card-fotos .boton-fotos {
+  display: none;
+} */
+
+.card-fotos a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
   position: absolute;
   top: 78%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: 1px solid #ccc;
-  background-color: white;
-  padding: 4px 15px;
+  border: 2px solid #fff;
+  padding: 10px 30px;
   border-radius: 5px;
-  transition: all 0.3s ease;
+  background-color: transparent;
 }
 
-.card .boton-videos {
+.card-fotos a:hover {
+  background-color: #f0f0f0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: #000000;
+}
+
+.card-videos a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
   position: absolute;
   top: 78%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: 1px solid #ccc;
-  background-color: white;
-  padding: 4px 15px;
+  border: 2px solid #fff;
+  padding: 10px 30px;
   border-radius: 5px;
-  transition: all 0.3s ease;
+  background-color: transparent;
 }
 
-.card .boton-fotos:hover {
-  background: #cacaca;
-}
-
-.card .boton-videos:hover {
-  background: #cacaca;
+.card-videos a:hover {
+  background-color: #f0f0f0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: #000000;
 }
