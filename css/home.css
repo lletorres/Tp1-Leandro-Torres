@@ -20,19 +20,7 @@ body {
   background-color: #222;
   padding: 10px 20px;
 }
-/* Media query del NAVBAR */
-@media (max-width: 360px) {
-  .navbar {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-  }
-  .navbar ul {
-    font-size: 13px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
+
 .navbar .logo {
   font-size: 30px;
 
@@ -66,6 +54,16 @@ body {
 .navbar .redes-sociales a {
   color: white;
   text-decoration: none;
+}
+@media (max-width: 495px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar ul {
+    padding: 5px;
+
+    font-size: 14px;
+  }
 }
 
 .footer {
@@ -134,21 +132,23 @@ body {
     left: 40px;
   }
 }
-.titulo-hero {
-  color: #fff;
-  font-size: 40px;
+@media (max-width: 495px) {
+  .texto-hero {
+    top: 135px;
+    left: 40px;
+  }
+  .titulo-hero {
+    font-size: 25px;
+    width: 252px;
+  }
 }
+
 @media (max-width: 360px) {
   .titulo-hero {
     font-size: 20px;
   }
 }
-@media (max-width: 768px) {
-  .titulo-hero {
-    font-size: 25px;
-    width: 280px;
-  }
-}
+
 .parrafo-hero {
   color: #fff;
   font-size: 16px;
